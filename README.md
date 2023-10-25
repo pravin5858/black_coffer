@@ -8,3 +8,5 @@ backend
 
 frontend
 -  npm add sass
+-  npm add react-router-dom
+-  npm install @mui/material @emotion/react @emotion/styled
