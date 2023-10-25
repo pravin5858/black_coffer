@@ -1,8 +1,8 @@
 import React from "react"
 import "./single.scss"
-const single = () => {
+const Single = () => {
     return (
         <div className="single">This is single</div>
     )
 }
-export default single
+export default Single

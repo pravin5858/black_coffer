@@ -1,5 +1,5 @@
 import React from "react"
-import "./New.scss"
+import "./new.scss"
 const New = () => {
     return (
         <div className="New">This is New</div>
