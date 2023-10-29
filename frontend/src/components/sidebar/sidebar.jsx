@@ -23,60 +23,65 @@ const Sidebar = () => {
                 <ul>
                     <p className="title">Main</p>
                     <li>
-                    <GridViewIcon />
+                    <GridViewIcon className="icon"/>
                         <span>Dashboard</span>
                     </li>
                     <p className="title">LISTS</p>
                     <li>
-                        <SupervisedUserCircleIcon  />
+                        <SupervisedUserCircleIcon  className="icon"/>
                         <span>Users</span>
                     </li>
                     <li>
-                        <ProductionQuantityLimitsIcon />
+                        <ProductionQuantityLimitsIcon className="icon"/>
                         <span>Products</span>
                     </li>
                     <li>
-                        <DvrIcon />
+                        <DvrIcon className="icon"/>
                         <span>Orders</span>
                     </li>
                     <li>
-                        <LocalShippingIcon />
+                        <LocalShippingIcon className="icon"/>
                         <span>Delivery</span>
                     </li>
                     <p className="title">Useful</p>
                     <li>
-                        <QueryStatsIcon />
+                        <QueryStatsIcon className="icon"/>
                         <span>Stats</span>
                     </li>
                     <li>
-                        <NotificationsActiveIcon />
+                        <NotificationsActiveIcon className="icon"/>
                         <span>Notification</span>
                     </li>
                     <p className="title">SERVICE</p>
                     <li>
-                        <SettingsSystemDaydreamIcon />
+                        <SettingsSystemDaydreamIcon className="icon"/>
                         <span>System Health</span>
                     </li>
                     <li>
-                        <VpnKeyIcon />
+                        <VpnKeyIcon className="icon"/>
                         <span>Logs</span>
                     </li>
                     <li>
-                        <SettingsIcon />
+                        <SettingsIcon className="icon"/>
                         <span>Settings</span>
                     </li>
                     <p className="title">User</p>
                     <li>
-                        <AssignmentIndIcon />
+                        <AssignmentIndIcon className="icon"/>
                         <span>Profiles</span>
                     </li>
                     <li>
-                        <LogoutIcon />
+                        <LogoutIcon className="icon"/>
                         <span>Log Out</span>
                     </li>
                 </ul>
             </div>
-            <div className="bottom">Color option</div>
+            <div className="bottom">
+                <div className="colorOption"></div>
+                <div className="colorOption"></div>
+                <div className="colorOption"></div>
+
+            </div>
             
         </div>
     )
