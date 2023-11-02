@@ -1,7 +1,11 @@
-import { CircularProgressbar } from "@mui/material";
+
 import "./featured.scss";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-// import "react-circular-progressbar/dist/style.css";
+import { CircularProgressbar } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+// import KeyboardArrowUpOutlinedIcon from "@mui/icons-material/KeyboardArrowUpOutlined";
+
 
 export const Featured = () => {
   return (
@@ -11,12 +15,43 @@ export const Featured = () => {
             <MoreVertIcon fontSize="small"/>
         </div>
         <div className="bottom">
-            <div className="featureChaart">
-            <CircularProgress variant="determinate" value={100} />
+            <div className="featureChart">
+            <CircularProgressbar value={57} className="circle" text={"57%"}/>
+            <p className="title">Total sales of today</p>
+            <p className="amount">$111</p>
+            <p className="desc">
+                Previous transaction is Failed processing. Last payments may not be included.
+            </p>
+            <div className="summary">
+                <div className="item">
+                    <div className="itemTitle">Target</div>
+                    <div className="itemResult positive">
+                        <KeyboardArrowDownIcon fontSize="small"/>
+                        <div className="resultAmount">
+                            $21.2
+                           </div>
+                    </div>
+                </div>
+                <div className="item">
+                    <div className="itemTitle">Target</div>
+                    <div className="itemResult negative">
+                        <KeyboardArrowDownIcon fontSize="small"/>
+                        <div className="resultAmount">
+                            $1.2
+                           </div>
+                    </div>
+                </div>
+                <div className="item">
+                    <div className="itemTitle">Target</div>
+                    <div className="itemResult positive">
+                        <KeyboardArrowDownIcon fontSize="small"/>
+                        <div className="resultAmount">
+                            $21.2
+                           </div>
+                    </div>
+                </div>
             </div>
-            <p className="title">TotalSales made today</p>
-            <p className="amount">$420</p>
-            <p className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
         </div>
     </div>
   )

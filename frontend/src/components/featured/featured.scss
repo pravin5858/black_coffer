@@ -1,8 +1,9 @@
 .featured{
-    flex: 0.3;
+    flex: 2;
     -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
     box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
     padding: 10px;
+
 
     .top{
         display: flex;
@@ -30,10 +31,56 @@
         .title{
             font-weight: 500;
             color: gray;
+            text-align: center;
         }
 
         .amount{
             font-size: 30px;
+            text-align: center;
+        }
+        .desc{
+            font-weight: 300;
+            font-size: 12;
+            color: gray;
+            text-align: center;
+        }
+
+        .summary{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .item{
+                text-align: center;
+
+
+                .itemTitle{
+                    font-size: 14px;
+                    color: gray;
+                }
+
+                .itemResult{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 10px;
+                    font-size: 14px;
+
+
+                    &.positive{
+                        color: green;
+                    }
+
+                    &.negative{
+                        color: red;
+                    }
+                }
+            }
+  
         }
     }
+}
+
+.circle{
+    height: 150px;
 }
