@@ -1,5 +1,6 @@
 # black_coffer
 
+
 backend
 -  venv/scripts/acticate
 -  python manage.py makemigrations
